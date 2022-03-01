@@ -1,0 +1,10 @@
+.info {
+  border-style: double;
+  border-width: 4px;
+
+  background-color: red;
+}
+
+body {
+  background-color: red;
+}
