@@ -9,6 +9,7 @@ body {
 }
 /* estilos div información pokemon */
 .info {
+  margin-top: 40px;
   border-style: double;
   border-width: 4px;
   background-color: lightgrey;
@@ -28,11 +29,11 @@ body {
   margin-bottom: 30px;
 }
 .request {
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 
 .div_izq {
-  width: 25vw;
+  width: 15%;
   height: 100vh;
   overflow: scroll;
   align-items: center;
@@ -42,10 +43,10 @@ body {
 }
 
 .div_der {
-  width: 75%;
+  width: 85%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
 }
