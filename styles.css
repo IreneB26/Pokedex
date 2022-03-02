@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding-top: 30px;
+  overflow: hidden;
 }
 /* estilos div información pokemon */
 .info {
@@ -22,6 +23,12 @@ body {
 .imagen-bus {
   width: 300px;
   height: 300px;
+}
+.list {
+  margin-bottom: 30px;
+}
+.request {
+  margin-bottom: 100px;
 }
 
 .div_izq {
@@ -56,10 +63,21 @@ body {
 }
 .input {
   width: 30%;
-  background-color: lightskyblue;
+  height: 40px;
+  background-color: lightgray;
   border-radius: 5px;
+  border: none;
 }
 .buscar {
+  background-color: lightgray;
+  margin-left: 5px;
   width: 10%;
   border-radius: 5px;
+  height: 40px;
+  border: none;
+}
+
+.buscar:hover {
+  border: 1px solid black;
+  cursor: pointer;
 }
