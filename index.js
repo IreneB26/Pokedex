@@ -31,7 +31,7 @@ function pokemonprint() {
         .then(function (Response) {
 
             const infod = Response.data;
-            console.log(infod);
+            
 
           
             const div_der = document.querySelector('.div_der');
@@ -78,10 +78,16 @@ function requestPokemons() {
             const list = document.querySelector('.list');
             list.innerHTML = '';
             pokemons.forEach(function (pokemon, number) {
-                list.innerHTML = list.innerHTML + `
+                console.log(pokemon);
+                const pokemon_div = `
+                <div class="div">
                 <h1>${pokemon.name}</h1>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number + 1}.png">
+                </div>
             `;
+
+            
+                list.innerHTML = list.innerHTML + pokemon_div;
             });
         })
         .catch(function (error) {
@@ -93,11 +99,24 @@ function requestPokemons() {
 
 
 // click en un pokemon y que genere tarjeta de info
+// no pone el click a los divs, coge la lista completa
 
 
-// document.querySelectorAll('.list').forEach(function(list, key) {
-//    list.addEventListener('click', function(e) {
-//        console.log(e);
+// const pok_d = document.querySelectorAll('.div');
+// const list = document.querySelectorAll('.list');
+// console.log(pok_d);
+
+
+// pok_d.forEach(function(pokemon_div, key) {
+//     console.log(pok_d);
+    
+//    pokemon_div.addEventListener('click', function(e) {
+//        console.log(pokemon_div);
+//         console.log(list);
+//        console.log(pokemon_div);
+
+//        alert(key);
+
 //       document.querySelector('.info').innerHTML = `
 
 
