@@ -37,13 +37,13 @@ function pokemonprint() {
             const div_der = document.querySelector('.div_der');
             
         
-            div_der.innerHTML = '';
+           
           
         
             
             div_der.innerHTML = div_der.innerHTML + `
 
-               <section class="info">
+               <div class="info">
                 <h1>${infod.name}</h1>
                
 
@@ -55,7 +55,7 @@ function pokemonprint() {
                <p> <span>Tipo</span> <span>${infod.types[0].type.name}</span></p>
                 <p><span>Habilidades</span> <span>${infod.abilities[0].ability.name}</span>
                 <span>${infod.abilities[1].ability.name}</span></p>
-                </section>
+                </div>
             `;
          
             
